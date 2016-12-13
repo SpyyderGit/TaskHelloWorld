@@ -17,7 +17,7 @@ public class HelloWorld {
 
     private Calendar c = Calendar.getInstance();
 
-    static  Logger log = (Logger) LogManager.getLogger(HelloWorld.class);
+//    static  Logger log = (Logger) LogManager.getLogger(HelloWorld.class);
 
     private int h = c.get(c.HOUR_OF_DAY);
     private int m = c.get(c.MINUTE);
@@ -70,7 +70,7 @@ public class HelloWorld {
 
         //        Locale locale = Locale.getDefault();
 //        ResourceBundle myResources = ResourceBundle.getBundle("resources.log.properties");
-        log.info(hw.getTimeOfDay());
+//        log.info(hw.getTimeOfDay());
 
 
     }
