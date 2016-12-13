@@ -69,8 +69,17 @@ public class HelloWorld {
 
 
         //        Locale locale = Locale.getDefault();
-//        ResourceBundle myResources = ResourceBundle.getBundle("resources.log.properties");
+//      ResourceBundle myResources = ResourceBundle.getBundle("log.properties");
 //        log.info(hw.getTimeOfDay());
+
+        if (Locale.getDefault().getDisplayLanguage().equals("русский")) {
+            System.out.print("Я говорю по-русски!\n");
+            Locale.setDefault(Locale.ENGLISH);
+        }
+
+        if (Locale.getDefault().getDisplayLanguage().equals("Deutsch"))
+            System.out.print("Ich spreche Deutsch!\n");
+
 
 
     }
