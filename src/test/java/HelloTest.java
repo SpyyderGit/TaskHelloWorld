@@ -2,12 +2,12 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Calendar;
+import java.util.Locale;
+import java.util.ResourceBundle;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by Jerald_PC on 12.12.2016.
- */
+
 public class HelloTest {
 
     private HelloWorld hello;
@@ -22,7 +22,9 @@ public class HelloTest {
 
     @Before
     public void init() {
-        hello = new HelloWorld();
+        Locale locale = Locale.getDefault();
+        ResourceBundle resourceBundle = ResourceBundle.getBundle("en", locale);
+        hello = new HelloWorld(resourceBundle);
         h = calendar.get(calendar.HOUR_OF_DAY);
         m = calendar.get(calendar.MINUTE);
         s = calendar.get(calendar.SECOND);
