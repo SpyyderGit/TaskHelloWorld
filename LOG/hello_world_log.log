@@ -1,0 +1,56 @@
+2017-08-16 13:35:27 INFO  HelloWorld:79 - Good Night, World!
+2017-08-16 13:36:31 INFO  HelloWorld:79 - Good Night, World!
+2017-08-16 14:11:01 INFO  HelloWorld:76 - Сейчас Good Day, World! 14:11
+2017-08-16 14:13:17 INFO  HelloWorld:76 - Сейчас Äîáðûé äåíü, Ìèð! 14:13
+2017-08-16 14:16:42 INFO  HelloWorld:76 - Сейчас Äîáðûé äåíü, Ìèð! 14:16
+2017-08-16 14:34:39 INFO  HelloWorld:87 - Сейчас Äîáðûé äåíü, Ìèð! 14:34
+2017-08-16 15:21:16 INFO  HelloWorld:87 - Сейчас Äîáðûé äåíü, Ìèð! 15:21
+2017-08-16 15:21:58 INFO  HelloWorld:87 - Сейчас Äîáðûé äåíü, Ìèð! 15:21
+2017-08-16 15:23:29 INFO  HelloWorld:87 - Сейчас Äîáðûé äåíü, Ìèð! 15:23
+2017-08-16 15:25:40 INFO  HelloWorld:87 - Сейчас Äîáðûé äåíü, Ìèð! 15:25
+2017-08-16 15:26:41 INFO  HelloWorld:87 - Сейчас Äîáðûé äåíü, Ìèð! 15:26
+2017-08-16 15:28:47 INFO  HelloWorld:87 - Сейчас Äîáðûé äåíü, Ìèð! 15:28
+2017-08-16 15:29:08 INFO  HelloWorld:87 - Сейчас Äîáðûé äåíü, Ìèð! 15:29
+2017-08-16 15:29:24 INFO  HelloWorld:87 - Сейчас Äîáðûé äåíü, Ìèð! 15:29
+2017-08-16 15:33:50 INFO  HelloWorld:87 - Сейчас Äîáðûé äåíü, Ìèð! 15:33
+2017-08-16 15:33:59 INFO  HelloWorld:87 - Сейчас Äîáðûé äåíü, Ìèð! 15:33
+2017-08-16 15:34:33 INFO  HelloWorld:87 - Сейчас Äîáðûé äåíü, Ìèð! 15:34
+2017-08-16 15:36:08 INFO  HelloWorld:87 - Сейчас Äîáðûé äåíü, Ìèð! 15:36
+2017-08-16 15:36:30 INFO  HelloWorld:87 - Сейчас Äîáðûé äåíü, Ìèð! 15:36
+2017-08-16 15:36:48 INFO  HelloWorld:87 - Сейчас Äîáðûé äåíü, Ìèð! 15:36
+2017-08-16 15:37:25 INFO  HelloWorld:87 - Сейчас Äîáðûé äåíü, Ìèð! 15:37
+2017-08-16 15:38:21 INFO  HelloWorld:87 - РЎРµР№С‡Р°СЃ Äîáðûé äåíü, Ìèð! 15:38
+2017-08-16 15:40:31 INFO  HelloWorld:87 - РЎРµР№С‡Р°СЃ Äîáðûé äåíü, Ìèð! 15:40
+2017-08-16 15:49:08 INFO  HelloWorld:82 - Äîáðûé äåíü, Ìèð! 15:49
+2017-08-16 15:49:31 INFO  HelloWorld:82 - Äîáðûé äåíü, Ìèð! 15:49
+2017-08-16 15:50:22 INFO  HelloWorld:82 - Äîáðûé äåíü, Ìèð! 15:50
+2017-08-16 15:54:14 INFO  HelloWorld:82 - Äîáðûé äåíü, Ìèð! 15:54
+2017-08-16 15:58:31 INFO  HelloWorld:80 - Äîáðûé äåíü, Ìèð! 15:58
+2017-08-16 15:58:49 INFO  HelloWorld:80 - Good Day, World! 15:58
+2017-08-16 16:00:56 INFO  HelloWorld:84 - Good Day, World! 16:0
+2017-08-16 16:00:56 INFO  HelloWorld:85 - Äîáðûé äåíü, Ìèð! 16:0
+2017-08-16 16:02:27 INFO  HelloWorld:84 - Good Day, World! 16:2
+2017-08-16 16:02:27 INFO  HelloWorld:85 - Äîáðûé äåíü, Ìèð! 16:2
+2017-08-16 22:52:24 INFO  HelloWorld:44 - testHour test OK 
+2017-08-16 22:52:24 INFO  HelloWorld:128 - test testAfterMidnight OK 
+2017-08-16 22:52:24 INFO  HelloWorld:146 - test testAfterEverning OK 
+2017-08-16 22:52:24 INFO  HelloWorld:163 - test testBeforeMorning OK 
+2017-08-16 22:52:24 INFO  HelloWorld:180 - test testMorning OK 
+2017-08-16 22:52:24 INFO  HelloWorld:195 - test testMiddleMorning OK 
+2017-08-16 22:52:24 INFO  HelloWorld:212 - test testAfterNight OK 
+2017-08-16 22:52:24 INFO  HelloWorld:228 - test testBeforeDay OK 
+2017-08-16 22:52:24 INFO  HelloWorld:244 - test testDay OK 
+2017-08-16 22:52:24 INFO  HelloWorld:259 - test testMiddleDay OK 
+2017-08-16 22:52:24 INFO  HelloWorld:274 - test testEndOfDay OK 
+2017-08-16 22:52:24 INFO  HelloWorld:289 - test testAfterMorning OK 
+2017-08-16 22:52:24 INFO  HelloWorld:305 - test testBeforeEvetning OK 
+2017-08-16 22:52:24 INFO  HelloWorld:321 - test testEverning OK 
+2017-08-16 22:52:24 INFO  HelloWorld:337 - test testMiddleEverning OK 
+2017-08-16 22:52:24 INFO  HelloWorld:352 - test testEndOfEverning OK 
+2017-08-16 22:52:24 INFO  HelloWorld:367 - test testAfterDay OK 
+2017-08-16 22:52:24 INFO  HelloWorld:383 - test testBeforeNight OK 
+2017-08-16 22:52:24 INFO  HelloWorld:83 - test testTimeFormat OK 
+2017-08-16 22:52:24 INFO  HelloWorld:98 - test testBeforeMidnight OK 
+2017-08-16 22:52:24 INFO  HelloWorld:114 - test testMidnight OK 
+2017-08-16 22:52:24 INFO  HelloWorld:56 - testMinutes test OK 
+2017-08-16 22:52:24 INFO  HelloWorld:70 - testSec test OK 

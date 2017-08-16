@@ -1,11 +1,12 @@
-import org.apache.logging.log4j.LogManager;
+import org.apache.log4j.Logger;
 
-import javax.annotation.Resource;
+
+import javax.sound.sampled.Control;
+import java.io.InputStream;
 import java.util.Calendar;
 import java.util.Locale;
+import java.util.PropertyResourceBundle;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * 6-9 утро
@@ -17,15 +18,16 @@ public class HelloWorld {
 
     private Calendar c = Calendar.getInstance();
 
-    private static final Logger log = Logger.getLogger(HelloWorld.class.getName());
+    private static final Logger log = Logger.getLogger(HelloWorld.class);
 
     private int h = c.get(c.HOUR_OF_DAY);
     private int m = c.get(c.MINUTE);
     private int s = c.get(c.SECOND);
 
-    ResourceBundle resourceBundle;
+    private ResourceBundle resourceBundle;
 
     public HelloWorld(ResourceBundle resourceBundle) {
+
         this.resourceBundle = resourceBundle;
     }
 
@@ -70,24 +72,16 @@ public class HelloWorld {
     }
 
     public static void main(String[] args) {
-
-
         Locale locale = Locale.getDefault();
+        ResourceBundle resourceBundleEn = ResourceBundle.getBundle("en", locale);
+        ResourceBundle resourceBundleRu = ResourceBundle.getBundle("ru", locale);
 
-        ResourceBundle resourceBundle = ResourceBundle.getBundle("en", locale);
-        HelloWorld hw = new HelloWorld(resourceBundle);
+        HelloWorld textEn = new HelloWorld(resourceBundleEn);
+        HelloWorld textRu = new HelloWorld(resourceBundleRu);
 
-        log.info(resourceBundle.getString("night"));
+        log.info(textEn.getTimeOfDay());
+        log.info(textRu.getTimeOfDay());
 
-
-//        if (Locale.getDefault().getDisplayLanguage().equals("русский")) {
-//            System.out.print("Я говорю по-русски!\n");
-//            Locale.setDefault(Locale.ENGLISH);
-//        }
-//
-//        if (Locale.getDefault().getDisplayLanguage().equals("Deutsch"))
-//            System.out.print("Ich spreche Deutsch!\n");
-
-
+        System.out.println(textEn.getTimeOfDay());
     }
 }

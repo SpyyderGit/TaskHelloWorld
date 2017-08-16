@@ -1,3 +1,4 @@
+import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,6 +10,8 @@ import static org.junit.Assert.assertEquals;
 
 
 public class HelloTest {
+
+    private static final Logger log = Logger.getLogger(HelloWorld.class);
 
     private HelloWorld hello;
     private Calendar calendar = Calendar.getInstance();
@@ -36,6 +39,12 @@ public class HelloTest {
         int expected = h;
         int actual = hello.getH();
         assertEquals(expected, actual);
+
+        if (actual == expected) {
+            log.info("testHour test OK ");
+        } else {
+            log.error("testHour test error");
+        }
     }
 
     @Test
@@ -43,6 +52,12 @@ public class HelloTest {
         int expected = m;
         int actual = hello.getM();
         assertEquals(expected, actual);
+        if (actual == expected) {
+            log.info("testMinutes test OK ");
+        } else {
+            log.error("testMinutes test error");
+        }
+
     }
 
     @Test
@@ -50,6 +65,12 @@ public class HelloTest {
         int expected = s;
         int actual = hello.getS();
         assertEquals(expected, actual);
+
+        if (actual == expected) {
+            log.info("testSec test OK ");
+        } else {
+            log.error("testSec test error");
+        }
     }
 
     @Test
@@ -57,6 +78,12 @@ public class HelloTest {
         String expected = h + ":" + m;
         String actual = hello.getH() + ":" + hello.getM();
         assertEquals(expected, actual);
+
+        if (actual.equals(expected)) {
+            log.info("test testTimeFormat OK ");
+        } else {
+            log.error("test testTimeFormat error");
+        }
     }
 
     //=================== Testing good night =========================================
@@ -66,6 +93,13 @@ public class HelloTest {
         String expected = night + hello.getH() + ":" + hello.getM();
         String actual = hello.getTimeOfDay();
         assertEquals(expected, actual);
+
+        if (actual.equals(expected)) {
+            log.info("test testBeforeMidnight OK ");
+        } else {
+            log.error("test testBeforeMidnight error");
+        }
+
     }
 
 
@@ -75,6 +109,12 @@ public class HelloTest {
         String expected = night + hello.getH() + ":" + hello.getM();
         String actual = hello.getTimeOfDay();
         assertEquals(expected, actual);
+
+        if (actual.equals(expected)) {
+            log.info("test testMidnight OK ");
+        } else {
+            log.error("test testMidnight error");
+        }
     }
 
 
@@ -84,6 +124,12 @@ public class HelloTest {
         String expected = night + hello.getH() + ":" + hello.getM();
         String actual = hello.getTimeOfDay();
         assertEquals(expected, actual);
+        if (actual.equals(expected)) {
+            log.info("test testAfterMidnight OK ");
+        } else {
+            log.error("test testAfterMidnight error");
+        }
+
     }
 
 
@@ -95,6 +141,12 @@ public class HelloTest {
         String expected = night + hello.getH() + ":" + hello.getM();
         String actual = hello.getTimeOfDay();
         assertEquals(expected, actual);
+
+        if (actual.equals(expected)) {
+            log.info("test testAfterEverning OK ");
+        } else {
+            log.error("test testAfterEverning error");
+        }
     }
 
 
@@ -106,6 +158,13 @@ public class HelloTest {
         String expected = night + hello.getH() + ":" + hello.getM();
         String actual = hello.getTimeOfDay();
         assertEquals(expected, actual);
+
+        if (actual.equals(expected)) {
+            log.info("test testBeforeMorning OK ");
+        } else {
+            log.error("test testBeforeMorning error");
+        }
+
     }
 
     //=================== Testing good morning =========================================
@@ -116,6 +175,12 @@ public class HelloTest {
         String expected = morning + hello.getH() + ":" + hello.getM();
         String actual = hello.getTimeOfDay();
         assertEquals(expected, actual);
+
+        if (actual.equals(expected)) {
+            log.info("test testMorning OK ");
+        } else {
+            log.error("test testMorning error");
+        }
     }
 
 
@@ -125,6 +190,12 @@ public class HelloTest {
         String expected = morning + hello.getH() + ":" + hello.getM();
         String actual = hello.getTimeOfDay();
         assertEquals(expected, actual);
+
+        if (actual.equals(expected)) {
+            log.info("test testMiddleMorning OK ");
+        } else {
+            log.error("test testMiddleMorning error");
+        }
     }
 
 
@@ -136,6 +207,12 @@ public class HelloTest {
         String expected = morning + hello.getH() + ":" + hello.getM();
         String actual = hello.getTimeOfDay();
         assertEquals(expected, actual);
+
+        if (actual.equals(expected)) {
+            log.info("test testAfterNight OK ");
+        } else {
+            log.error("test testAfterNight error");
+        }
     }
 
     @Test
@@ -146,6 +223,12 @@ public class HelloTest {
         String expected = morning + hello.getH() + ":" + hello.getM();
         String actual = hello.getTimeOfDay();
         assertEquals(expected, actual);
+
+        if (actual.equals(expected)) {
+            log.info("test testBeforeDay OK ");
+        } else {
+            log.error("test testBeforeDay error");
+        }
     }
 
     //=================== Testing good day =========================================
@@ -155,6 +238,13 @@ public class HelloTest {
         String expected = day + hello.getH() + ":" + hello.getM();
         String actual = hello.getTimeOfDay();
         assertEquals(expected, actual);
+
+
+        if (actual.equals(expected)) {
+            log.info("test testDay OK ");
+        } else {
+            log.error("test testDay error");
+        }
     }
 
 
@@ -164,6 +254,12 @@ public class HelloTest {
         String expected = day + hello.getH() + ":" + hello.getM();
         String actual = hello.getTimeOfDay();
         assertEquals(expected, actual);
+
+        if (actual.equals(expected)) {
+            log.info("test testMiddleDay OK ");
+        } else {
+            log.error("test testMiddleDay error");
+        }
     }
 
 
@@ -173,6 +269,12 @@ public class HelloTest {
         String expected = day + hello.getH() + ":" + hello.getM();
         String actual = hello.getTimeOfDay();
         assertEquals(expected, actual);
+
+        if (actual.equals(expected)) {
+            log.info("test testEndOfDay OK ");
+        } else {
+            log.error("test testEndOfDay error");
+        }
     }
 
     @Test
@@ -183,6 +285,12 @@ public class HelloTest {
         String expected = day + hello.getH() + ":" + hello.getM();
         String actual = hello.getTimeOfDay();
         assertEquals(expected, actual);
+        if (actual.equals(expected)) {
+            log.info("test testAfterMorning OK ");
+        } else {
+            log.error("test testAfterMorning error");
+        }
+
     }
 
     @Test
@@ -193,6 +301,12 @@ public class HelloTest {
         String expected = day + hello.getH() + ":" + hello.getM();
         String actual = hello.getTimeOfDay();
         assertEquals(expected, actual);
+        if (actual.equals(expected)) {
+            log.info("test testBeforeEvetning OK ");
+        } else {
+            log.error("test testBeforeEvetning error");
+        }
+
     }
 
 
@@ -203,6 +317,12 @@ public class HelloTest {
         String expected = everning + hello.getH() + ":" + hello.getM();
         String actual = hello.getTimeOfDay();
         assertEquals(expected, actual);
+        if (actual.equals(expected)) {
+            log.info("test testEverning OK ");
+        } else {
+            log.error("test testEverning error");
+        }
+
     }
 
 
@@ -212,6 +332,12 @@ public class HelloTest {
         String expected = everning + hello.getH() + ":" + hello.getM();
         String actual = hello.getTimeOfDay();
         assertEquals(expected, actual);
+
+        if (actual.equals(expected)) {
+            log.info("test testMiddleEverning OK ");
+        } else {
+            log.error("test testMiddleEverning error");
+        }
     }
 
 
@@ -221,6 +347,12 @@ public class HelloTest {
         String expected = everning + hello.getH() + ":" + hello.getM();
         String actual = hello.getTimeOfDay();
         assertEquals(expected, actual);
+
+        if (actual.equals(expected)) {
+            log.info("test testEndOfEverning OK ");
+        } else {
+            log.error("test testEndOfEverning error");
+        }
     }
 
     @Test
@@ -231,6 +363,11 @@ public class HelloTest {
         String expected = everning + hello.getH() + ":" + hello.getM();
         String actual = hello.getTimeOfDay();
         assertEquals(expected, actual);
+        if (actual.equals(expected)) {
+            log.info("test testAfterDay OK ");
+        } else {
+            log.error("test testAfterDay error");
+        }
     }
 
     @Test
@@ -241,5 +378,11 @@ public class HelloTest {
         String expected = everning + hello.getH() + ":" + hello.getM();
         String actual = hello.getTimeOfDay();
         assertEquals(expected, actual);
+
+        if (actual.equals(expected)) {
+            log.info("test testBeforeNight OK ");
+        } else {
+            log.error("test testBeforeNight error");
+        }
     }
 }
